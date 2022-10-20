@@ -14,7 +14,7 @@ This action helps you to return changelist for users
 ## Example usage
 
 ```yaml
-uses: actions/return-changelist
+uses: hybridx/return-changelist@v0.4
 with:
   keyword: "-spa"
   folder: true
