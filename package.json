@@ -2,8 +2,9 @@
   "name": "return-changelist",
   "version": "1.0.0",
   "description": "Github action to return changelist in a repository",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "ncc build index.js --license licenses.txt",
     "test": "jest"
   },
   "repository": {
