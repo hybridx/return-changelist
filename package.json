@@ -4,7 +4,7 @@
   "description": "Github action to return changelist in a repository",
   "main": "dist/index.js",
   "scripts": {
-    "build": "ncc build index.js --license licenses.txt",
+    "build": "rimraf ./dist && ncc build index.js --license licenses.txt",
     "test": "jest"
   },
   "repository": {
@@ -25,6 +25,7 @@
   "homepage": "https://github.com/hybridx/return-changelist#readme",
   "dependencies": {
     "@actions/core": "^1.10.0",
-    "@actions/github": "^5.1.1"
+    "@actions/github": "^5.1.1",
+    "rimraf": "^3.0.2"
   }
 }
